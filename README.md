@@ -1,2 +1,2 @@
-# A cross-border Calanus model collaboration for the Northwest Atlantic
+# Cross-border Calanus model for the Northwest Atlantic
 
