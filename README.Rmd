@@ -1,0 +1,44 @@
+---
+title: "calanus-nwa"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Cross-border Calanus model for the Northwest Atlantic
+
+### Bounding box for study
+
+```
+ xmin  xmax  ymin  ymax 
+-77.0 -42.5  36.5  56.7 
+```
+
+### Packages
+
+Developed for this effort...
+
+ + [ecomon](https://github.com/BigelowLab/ecomon)
+ 
+ + [azmpcfin](https://github.com/BigelowLab/azmpcfin)
+
+From other projects...
+
+ + [azmpdata](https://github.com/casaultb/azmpdata)
+
+ + [multivaR](https://github.com/EOGrady21/multivaR)
+ 
+ 
+### Simple usage
+
+```{r}
+# start in the `scripts` directory
+orig_dir <- getwd()
+setwd("scripts")
+source("setup.R")
+setwd(orig_dir)
+x <- merge_calanus()
+glimpse(x)
+```
